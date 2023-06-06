@@ -1,0 +1,26 @@
+main {
+    margin: 0;
+}
+
+div {
+    text-align: center;
+}
+
+.contributor {
+    margin: 0;
+}
+
+div .name {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+div .github {
+    margin: 0;
+    font-size: 1.8rem;
+
+}
+
+div .btn {
+    margin-bottom: 2rem;
+}
