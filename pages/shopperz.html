@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopperz</title>
+    <link rel="icon" href="../assets/icon-192.png">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <script src="../dexie.min.js"></script>
+    <script>
+        if('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('../sw.js')
+            })
+        }
+    </script>
+</head>
+<body>
+    <main class="main-container">
+        <div class="container">
+            <header class="header">
+                <a href="" class="logo">Shopperz</a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./shopperz.html">APP</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/contributers.html">Contributors</a></li>
+                </ul>
+            </header>
+    
+            <form action="" id="itemForm">
+                <label>
+                    Name of Item:
+                    <input type="text" id="nameInput" required>
+                </label>
+    
+                <label>
+                    Quantity:
+                    <input type="number" id="quantityInput"  min="1" value=1>
+                </label>
+    
+                <label>
+                    Price:
+                    <input type="text" id="priceInput" placeholder="$00.00">
+                </label>
+
+                <button type="submit" id="addItemButton">Add item</button>
+            </form>
+
+            <div id="itemsDiv"></div>
+            <div id="totalPriceDiv"></div>
+
+
+        </div>
+
+    </main>
+
+    <script src="../index.js"></script>
+</body>
+</html>
