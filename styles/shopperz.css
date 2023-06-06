@@ -1,0 +1,49 @@
+.name {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.description {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+p .app {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+div .main-description {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.btn-div {
+    text-align: center;
+}
+
+.btn {
+    padding: 18px;
+    background: #00805a;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.images {
+    text-align: center;
+}
